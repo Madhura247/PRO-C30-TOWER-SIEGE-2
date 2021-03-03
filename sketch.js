@@ -17,10 +17,10 @@ function setup() {
     ground = new Ground(width/2, height-8, width, 15);
     stand1 = new Stand(500, 430, 300, 13);
 
-    polygon = Bodies.circle(50, 200, 20);
+    polygon = Bodies.circle(50, 200, 100);
     World.add(world,polygon);
 
-    slingShot = new SlingShot(this.polygon, {x:100, y:200});
+    slingShot = new SlingShot(polygon, {x:150, y:200});
 
     block1 = new Block(400, 401, 32, 42);
     block2 = new Block(431, 401, 32, 42);
